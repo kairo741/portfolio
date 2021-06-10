@@ -34,7 +34,7 @@
     float: left;
     width: 300px;
     height: 100%;
-    position: fixed;
+    /* position: fixed; */
     z-index: 1001;
     background-color: #2e003b;
     -webkit-transition: 0.5s;
@@ -81,17 +81,6 @@
     width: 10%;
 }
 
-
-/* ------------------------ */
-
-body {
-    background-size: 100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-}
-
 #author-name {
     text-align: right;
     font-weight: 700;
@@ -117,11 +106,24 @@ body {
     border: 3px solid #ef9aec;
 }
 
+
+/* ------------------------ */
+
+body {
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 
 .cards {
     font-size: 1.8em;
-    float: right;
+    float: left;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-c: auto auto;
     color: white;
 }
 
@@ -139,8 +141,26 @@ body {
 .content {
     position: relative;
     background-color: rgba(177, 19, 142, 0.575);
-    padding-left: 30px;
-    padding-top: 10px;
+    padding: 20px 30px 30px 30px;
+}
+
+.content img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+} */
+
+.column {
+    color: white;
+    /* font-size: large; */
+    margin: 5px;
+    padding: 20px;
+    width: calc(50% - 50px - 2px);
+    /* width less margin less border */
+    border: 1px solid #ccc;
+    /* background-color: lightgreen; */
+    box-sizing: border-box;
 }
 
 .content img {
@@ -149,6 +169,20 @@ body {
     bottom: 0;
     width: 25%;
 }
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+    /* height:auto; */
+    height: 500px;
+    /* overflow-y: scroll; */
+    /* background-color: whitesmoke; */
+}
+
+
+/*Button --------------------*/
 
 button {
     background-color: rgb(195, 175, 198, 0.5);
@@ -164,3 +198,6 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+
+/*Button --------------------*/
