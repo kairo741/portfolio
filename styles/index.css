@@ -28,12 +28,12 @@
 /* ------------Perfil---------------- */
 
 .left-bar {
-    /* padding-top: 2em; */
+    padding-top: 1.55em;
     padding-bottom: 1px;
     padding-left: 10px;
     float: left;
     width: 300px;
-    height: 100%;
+    height: 100vh;
     /* position: fixed; */
     z-index: 1001;
     background-color: #2e003b;
@@ -159,6 +159,7 @@ body {
     width: calc(50% - 50px - 2px);
     /* width less margin less border */
     border: 1px solid #ccc;
+    border-radius: 10px;
     /* background-color: lightgreen; */
     box-sizing: border-box;
 }
@@ -201,3 +202,47 @@ button:hover {
 
 
 /*Button --------------------*/
+
+
+/*Search form --------------------*/
+
+form {
+    text-align: center;
+}
+
+#google-search input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 26px;
+    width: 150px;
+}
+
+#search-box {
+    background-color: rgba(255, 255, 255, 0.267);
+    color: white;
+    border: none;
+}
+
+#search-submit {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    background-color: #eae0c2;
+    border-radius: 15px;
+    border: 2px solid #333029;
+    display: inline-block;
+    cursor: pointer;
+    color: #505739;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+#search-submit:hover {
+    background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    background-color: #ccc2a6;
+}
+
+
+/*Search form --------------------*/
