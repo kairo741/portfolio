@@ -25,14 +25,15 @@
 }
 
 
-/* ------------------------------------- */
+/* ------------Perfil---------------- */
 
 .left-bar {
-    padding-top: 2em;
+    /* padding-top: 2em; */
     padding-bottom: 1px;
     padding-left: 10px;
     float: left;
     width: 300px;
+    height: 100%;
     position: fixed;
     z-index: 1001;
     background-color: #2e003b;
@@ -57,6 +58,31 @@
     color: white;
     padding-right: .3em;
 }
+
+#profile-description {
+    color: white;
+}
+
+#social-media {
+    padding-top: 30%;
+    font-size: 1.4em;
+    color: white;
+}
+
+#social-media-icons {
+    padding-top: 20px;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+#social-media-icons img {
+    vertical-align: middle;
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+
+/* ------------------------ */
 
 body {
     background-size: 100%;
@@ -91,14 +117,37 @@ body {
     border: 3px solid #ef9aec;
 }
 
-#dev-lang {
-    background-color: rgba(255, 255, 255, 0.4);
-    align-items: center;
+.cards {
+    font-size: 1.8em;
+    float: right;
     display: grid;
-    /* grid-template-columns: auto auto auto; */
-    grid-column: auto;
-    /* justify-content: center; */
-    padding-left: 20em;
+    grid-template-columns: auto auto;
+    color: white;
+}
+
+.column {
+    text-align: justify;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.cards,
+.cards>.column {
+    padding: 7px;
+}
+
+.content {
+    position: relative;
+    background-color: rgba(177, 19, 142, 0.575);
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.content img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25%;
 }
 
 button {
