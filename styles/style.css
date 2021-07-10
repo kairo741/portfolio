@@ -137,3 +137,54 @@ body {
     position: relative;
     top: 1px;
 }
+
+
+/* ----- Contact */
+
+#contact h1 {
+    font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+#contact-content {
+    margin: 2%;
+    row-gap: 3rem;
+}
+
+#contact-methods {
+    /* display: flex; */
+    margin-bottom: 2em;
+}
+
+#contact-phone span {
+    margin-left: 5.5%;
+}
+
+#contact-email span {
+    margin-left: 5.5%;
+}
+
+#contact-phone {
+    margin-bottom: 3%;
+}
+
+#contact-email {
+    margin-bottom: 3%;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    vertical-align: middle;
+    color: var(--first-color);
+    margin-right: var(--h3-font-size);
+}
+
+
+/* 
+#your-message {
+    font-size: 1.5em;
+    font-weight: 7000;
+    padding-bottom: 0.5em;
+} */

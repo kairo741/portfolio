@@ -1,1 +1,2 @@
-    // var initDate = 2020;
+
+    return buildedMessage;
